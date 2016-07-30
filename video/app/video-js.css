@@ -37,7 +37,7 @@ The control icons are from a custom font. Each icon corresponds to a character
   padding: 0;
   /* background-color-with-alpha */
   background-color: #333333;
-  background-color: rgba(51, 51, 51, 0.9);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 .vjs-default-skin .vjs-slider:focus {
   /* box-shadow */
@@ -86,8 +86,8 @@ The default control bar that is a container for most of the controls.
   /* Height includes any margin you want above or below control items */
   height: 3.0em;
   /* background-color-with-alpha */
-  background-color: rgb(86, 86, 86);
-  background-color: rgba(86, 86, 86, 0.8);
+  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 /* Show the control bar only once the video has started playing */
 .vjs-default-skin.vjs-has-started .vjs-control-bar {
@@ -151,7 +151,7 @@ fonts to show/hide properly.
   width: 100%;
   height: 100%;
   text-align: center;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
 }
 /* Replacement for focus outline */
 .vjs-default-skin .vjs-control:focus:before,
@@ -182,6 +182,7 @@ fonts to show/hide properly.
 .vjs-default-skin .vjs-play-control {
   width: 5em;
   cursor: pointer;
+  color: #d63169;
 }
 .vjs-default-skin .vjs-play-control:before {
   content: "\e001";
@@ -195,6 +196,7 @@ fonts to show/hide properly.
 .vjs-default-skin .vjs-volume-menu-button {
   cursor: pointer;
   float: right;
+  color: #d63169;
 }
 .vjs-default-skin .vjs-mute-control:before,
 .vjs-default-skin .vjs-volume-menu-button:before {
@@ -229,7 +231,7 @@ fonts to show/hide properly.
   top: 0;
   left: 0;
   height: 0.5em;
-  background: #04c191 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAP0lEQVQIHWWMAQoAIAgDR/QJ/Ub//04+w7ZICBwcOg5FZi5iBB82AGzixEglJrd4TVK5XUJpskSTEvpdFzX9AB2pGziSQcvAAAAAAElFTkSuQmCC) -50% 0 repeat;
+  background: #d63169 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAP0lEQVQIHWWMAQoAIAgDR/QJ/Ub//04+w7ZICBwcOg5FZi5iBB82AGzixEglJrd4TVK5XUJpskSTEvpdFzX9AB2pGziSQcvAAAAAAElFTkSuQmCC) -50% 0 repeat;
 }
 .vjs-default-skin .vjs-volume-bar .vjs-volume-handle {
   width: 0.5em;
@@ -305,7 +307,7 @@ fonts to show/hide properly.
       The -50% left position makes that happen.
   */
 
-  background: #04c191 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAP0lEQVQIHWWMAQoAIAgDR/QJ/Ub//04+w7ZICBwcOg5FZi5iBB82AGzixEglJrd4TVK5XUJpskSTEvpdFzX9AB2pGziSQcvAAAAAAElFTkSuQmCC) -50% 0 repeat;
+  background: #d63169 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAP0lEQVQIHWWMAQoAIAgDR/QJ/Ub//04+w7ZICBwcOg5FZi5iBB82AGzixEglJrd4TVK5XUJpskSTEvpdFzX9AB2pGziSQcvAAAAAAElFTkSuQmCC) -50% 0 repeat;
 }
 .vjs-default-skin .vjs-load-progress {
   background: #646464 /* IE8- Fallback */;
@@ -328,9 +330,11 @@ fonts to show/hide properly.
 }
 .vjs-default-skin .vjs-current-time {
   float: left;
+  color: #d63169;
 }
 .vjs-default-skin .vjs-duration {
   float: left;
+  color: #d63169;
 }
 /* Remaining time is in the HTML, but not included in default design */
 .vjs-default-skin .vjs-remaining-time {
@@ -340,6 +344,7 @@ fonts to show/hide properly.
 .vjs-time-divider {
   float: left;
   line-height: 3em;
+  color: #d63169;
 }
 /* Fullscreen
 --------------------------------------------------------------------------------
@@ -348,6 +353,7 @@ fonts to show/hide properly.
   width: 3.8em;
   cursor: pointer;
   float: right;
+  color: #d63169;
 }
 .vjs-default-skin .vjs-fullscreen-control:before {
   content: "\e000";
@@ -623,7 +629,7 @@ positioning, use another containing element. Otherwise you risk messing up
 control positioning and full window mode. **
 */
 .video-js {
-  background-color: #000;
+  background-color: #fff;
   position: relative;
   padding: 0;
   /* Start with 10px for base font size so other dimensions can be em based and

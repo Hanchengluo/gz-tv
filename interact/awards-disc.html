@@ -30,11 +30,20 @@
         -webkit-box-align: center;
         -webkit-align-items: center;
         align-items: center;
-        background: #04c191;
+        background: #fff;
         min-height: 44px;
         box-sizing: border-box;
     }
+    .titlebar h1{
+        font-size: 17px;
+    }
     .icon-arrowleft{
+        display: block;
+        width: 24px;
+        height: 24px;
+        background: url(../assets/app/img/menu/arrowleft.png) center center no-repeat;
+        background-size: 70%;
+        text-indent: 999px;
         font-size: 30px;
         font-family: "宋体";
         color: #fff;
@@ -46,9 +55,9 @@
 <header>
     <div class="titlebar">
         <a class="left" href="javascript:history.go(-1);">
-            <i class="icon icon-arrowleft"><</i>
+            <i class="icon icon-arrowleft"></i>
         </a>
-        <h1 class="text-center"></h1>
+        <h1 class="text-left">有奖游戏</h1>
     </div>
 </header>
     <div class="g-wrap">
