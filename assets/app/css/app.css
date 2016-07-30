@@ -1,40 +1,69 @@
 /*首页*/
 .rectbar .tab, .slidebar .tab, .tabbar .tab{
-    background:#04c191;
+    background:#fff;
 }
 .rectbar, .slidebar, .tabbar{
-    color: #f1f1f1;
+    color: #727272;
 }
 header .tab:active, header .tab.active{
-    color: #fff;
+    color: #7b1fa1;
 }
 header .titlebar{
-    background: #04c191;
+    background:-moz-linear-gradient(left,#7b1fa1,#7c4dff);
+    background:-webkit-gradient(linear,0 50%,100% 50%,from(#7b1fa1),to(#7c4dff));
+    background:-webkit-linear-gradient(left,#7b1fa1,#7c4dff);
+    background:-o-linear-gradient(left,#7b1fa1,#7c4dff);
 }
 header .titlebar a,header .titlebar h1{
     color: #fff;
 }
+.slidebar .tab, .tabbar .tab{
+    height: 34px;
+    line-height: 34px;
+}
 .slidebar .tab:active, .slidebar .tab.active{
-    border-color: #fff;
+    border-color: #7b1fa1;
 }
 .meun-rome{
     position: absolute;
     top: 0;
     z-index: 999;
-    background-color: #04C191;
+    background-color: #fff;
     right: 0;
     width: 30px;
     text-align: center;
-    height: 41px;
-    line-height: 40px;
+    height: 35px;
+    line-height: 35px;
     font-size: 20px;
     color: #fff;
     box-shadow: -1px -1px 12px rgba(0, 0, 0, 0.5)
 }
+.meun-rome img{
+    width: 60%;
+}
+#logo{
+    position: absolute;
+    top: 6px;
+    width: 40%;
+}
+#logo img{
+    width: 80%;
+}
 #search-box{
     position: absolute;
-    top: 48px;
-    width: 100%;
+    top: 6px;
+    right: 4px;
+    width: 60%;
+    color: #fff;
+}
+#search-box .input-box{
+    background: none;
+    border-color: #fff;
+}
+#search-box input[type="text"].search{
+    padding-top: 3px;
+    padding-bottom: 3px;
+    color: #fff;
 }
 /*文章列表*/
 #new-box{
@@ -81,10 +110,10 @@ header .titlebar a,header .titlebar h1{
 }
 .news-bottom>.lable{
     border-radius: 5px;
-    border: #04C191 solid 1px;
+    border: #7b1fa1 solid 1px;
     padding: 0 5px;
     margin-bottom: 4px;
-    color: #04C191;
+    color: #7b1fa1;
 }
 /*背景颜色定义*/
 .bg-hui {
@@ -101,11 +130,11 @@ footer .menubar{
 }
 
 footer .tab:active, footer .tab.active{
- color: #04C191;
+ color: #7c4dff;
 }
 footer .menubar .icon-new{
     background: url(../img/menu/menu01-d.png) center center no-repeat;
-    background-size: 100%;
+    background-size: 90%;
 }
 footer .menubar .icon-viode{
     background: url(../img/menu/menu02-d.png) center center no-repeat;
@@ -117,11 +146,11 @@ footer .menubar .icon-interact{
 }
 footer .menubar .icon-users{
     background: url(../img/menu/menu04-d.png) center center no-repeat;
-    background-size: 100%;
+    background-size: 90%;
 }
 footer .menubar .active>.icon-new,footer .menubar .tab:active>.icon-new{
     background: url(../img/menu/menu01-a.png) center center no-repeat;
-    background-size: 100%;
+    background-size: 90%;
 }
 footer .menubar .active>.icon-viode,footer .menubar .tab:active>.icon-viode{
     background: url(../img/menu/menu02-a.png) center center no-repeat;
@@ -133,7 +162,7 @@ footer .menubar .active>.icon-interact,footer .menubar .tab:active>.icon-interac
 }
 footer .menubar .active>.icon-users,footer .menubar .tab:active>.icon-users{
     background: url(../img/menu/menu04-a.png) center center no-repeat;
-    background-size: 100%;
+    background-size: 90%;
 }
 
 /*视频页面*/
@@ -300,7 +329,7 @@ footer .menubar .active>.icon-users,footer .menubar .tab:active>.icon-users{
 /*互动模块*/
 .menu-box{
     width: 100%;
-    background-color: #04C191;
+    background-color: #fff;
 }
 .menu-box li{
     float: left;
@@ -313,11 +342,11 @@ footer .menubar .active>.icon-users,footer .menubar .tab:active>.icon-users{
     line-height: 39px;
     text-align: center;
     display: inline-block;
-    color: #fff;
-    border-bottom: #04C191 solid 1px;
+    color: #7b1fa1;
+    border-bottom: #ddd solid 1px;
 }
 .menu-box li.active span{
-    border-bottom: #fff solid 1px;
+    border-bottom: #7b1fa1 solid 1px;
 }
 #interac-box{
     padding-top: 6px;
