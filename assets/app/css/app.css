@@ -315,9 +315,10 @@ footer .menubar .active>.icon-users,footer .menubar .tab:active>.icon-users{
 .titlebar .comment-btn{
     height: 34px;
     line-height: 34px;
-    background-color: #04C191;
+    background-color: #fff;
+    border: 1px solid #7b1fa1;
     padding: 0 25px !important;
-    color: #fff !important;
+    color: #7b1fa1 !important;
 }
 /*文章部分*/
 .article-info{
@@ -584,7 +585,6 @@ footer>.titlebar{
 .list.noclick{
     background: #fff;
     padding: 0 6px;
-    border-top: #ddd solid 1px;
     border-bottom: #ddd solid 1px;
 }
 .list.noclick li:last-child{
