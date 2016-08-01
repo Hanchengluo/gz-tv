@@ -13,16 +13,13 @@
             <section id="slider_section" data-role="section" class="active">
                 <header>
                     <div class="titlebar">
-                        <div id="logo">
+                        <h1 id="logo">
                             <img src="../update/top-logo.png" alt="">
-                        </div>
-                        <div id="search-box" class="">
-                            <div class="padding-bottom">
-                                <div class="input-box radius20" style="">
-                                    <input type="text" placeholder="搜索框" class="search">
-                                    <i class="color-placeholder icon icon-search"></i>
-                                </div>
-                            </div>
+                        </h1>
+                        <div class="right">
+                            <a>
+                                <i class="icon icon-search"></i>
+                            </a>
                         </div>
                     </div>
                     <div class="menu-box clearfix">
@@ -41,20 +38,32 @@
                                 <div class="scroller">
                                     <div id="interac-box" class="">
                                         <div class="interac-list" href="activity-info.html" data-toggle="html">
-                                            <img src="../update/activity-apply01.jpg"  width="100%" alt="">
                                             <p>2013中海地产“幸福达人秀”全城报名即将开启 </p>
+                                            <img src="../update/activity-apply01.jpg"  width="100%" alt="">
+                                        </div>
+                                        <div class="timelink">
+                                            <span class="float-left">2016-07-20</span><span class="float-right"><i class="zan active"></i></span>
                                         </div>
                                         <div class="interac-list" href="activity-info.html" data-toggle="html">
-                                            <img src="../update/activity-apply02.jpg" width="100%" alt="">
                                             <p>越秀星汇金沙开发区大型相亲会火热报名中 </p>
+                                            <img src="../update/activity-apply02.jpg" width="100%" alt="">
+                                        </div>
+                                        <div class="timelink">
+                                            <span class="float-left">2016-07-20</span><span class="float-right"><i class="zan active"></i></span>
                                         </div>
                                         <div class="interac-list" href="activity-info.html" data-toggle="html">
-                                            <img src="../update/activity-apply03.jpg" width="100%" alt="">
-                                            <p>投票活动开始了-"感动大亚湾十大好人"评选 活动投票 </p>
+                                            <p>越秀星汇金沙开发区大型相亲会火热报名中 </p>
+                                            <img src="../update/activity-apply02.jpg" width="100%" alt="">
+                                        </div>
+                                        <div class="timelink">
+                                            <span class="float-left">2016-07-20</span><span class="float-right"><i class="zan"></i></span>
                                         </div>
                                         <div class="interac-list" href="activity-info.html" data-toggle="html">
-                                            <img src="../update/activity-apply01.jpg" width="100%" alt="">
-                                            <p>“互联网 ”五星服务大赛——我是人气王投票活动已 </p>
+                                            <p>越秀星汇金沙开发区大型相亲会火热报名中 </p>
+                                            <img src="../update/activity-apply02.jpg" width="100%" alt="">
+                                        </div>
+                                        <div class="timelink">
+                                            <span class="float-left">2016-07-20</span><span class="float-right"><i class="zan"></i></span>
                                         </div>
                                         <div id="content2">
                                         </div>
@@ -119,7 +128,7 @@
                 refresh.on('pullup', function(){
                     //setTimeout是模拟异步效果
                     setTimeout(function(){
-                        $('#content2').append('<div class="interac-list" href="activity-info.html" data-toggle="html"><img src="../update/interac01.jpg" width="100%" alt=""><p>“异步加载数据”五星服务大赛——我是人气王投票活动已经正式开始了，赶紧发动小伙伴投票吧 </p></div>');
+                        $('#content2').append('<div class="interac-list" href="activity-info.html" data-toggle="html"><p>越秀星汇金沙开发区大型相亲会火热报名中 </p><img src="../update/activity-apply02.jpg" width="100%" alt=""></div><div class="timelink"><span class="float-left">2016-07-20</span><span class="float-right"><i class="zan"></i></span></div>');
                         refresh.refresh();//当scroll区域有dom结构变化需刷新
                     }, 1000);
                 });

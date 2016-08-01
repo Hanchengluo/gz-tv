@@ -44,10 +44,11 @@ header .titlebar a,header .titlebar h1{
 #logo{
     position: absolute;
     top: 6px;
-    width: 40%;
+    width: auto;
+    height: 32px;
 }
 #logo img{
-    width: 80%;
+    height: 100%;
 }
 #search-box{
     position: absolute;
@@ -354,18 +355,36 @@ footer .menubar .active>.icon-users,footer .menubar .tab:active>.icon-users{
     margin: 0 auto;
 }
 .interac-list{
-    position: relative;
+    display: block;
     width: 100%;
     margin: 0 auto 6px auto;
 }
 .interac-list p{
-    position: absolute;
-    background: rgba(4, 193, 145, 0.9);
+    display: block;
     padding: 6px 1%;
-    color: #fff;
-    left: 0;
-    bottom: 0;
+    color: #212121;
     width: 98%;
+    overflow: hidden;
+}
+.timelink{
+    display: block;
+    padding: 0 1% 6px 1%;
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+}
+.timelink span{
+    display: inline-block;
+}
+.timelink span .zan{
+    display: inline-block;
+    width: 17px;
+    height: 18px;
+    background: url(../img/video/head01.png) no-repeat top center;
+    background-size: 100%;
+}
+.timelink span .zan.active{
+    background: url(../img/video/head02.png) no-repeat top center;
+    background-size: 100%;
 }
 .voteinfo-list{
 
@@ -402,7 +421,7 @@ footer .menubar .active>.icon-users,footer .menubar .tab:active>.icon-users{
     font-size: 18px;
 }
 .picture-tab{
-    background: #db134d;
+    border-bottom: 1px solid #ddd;
 }
 .picture-tab li{
     position: relative;
@@ -410,19 +429,10 @@ footer .menubar .active>.icon-users,footer .menubar .tab:active>.icon-users{
     float: left;
     padding: 8px 0;
     text-align: center;
-    color: #fff;
+    color: #7b1fa1;
 }
-.picture-tab li i.jiao{
-    position: absolute;
-    bottom: -6px;
-    display: inline-block;
-    /* width: 10px; */
-    /* height: 10px; */
-    left: 50%;
-    margin-left: -10px;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-top: 12px solid #DB134D;
+.picture-tab li.active{
+    border-bottom: 2px solid #7b1fa1;
 }
 .picture-info-box{
 
@@ -533,18 +543,18 @@ a {
 }
 /*修改表单*/
 button.submit, input[type="submit"], .button.submit {
-    background-color: #04C191;
+    background-color: #7b1fa1;
 }
 input[type="checkbox"]:checked, input[type="radio"]:checked, .checkbox.active, .radio.active {
-    color: #04C191;
+    color: #7b1fa1;
 }
 /*修改弹窗*/
 .agile-popup{
-    background: #04C191 !important;
-    color: #fff;
+    background: #fff !important;
+    color: #7b1fa1;
 }
 .agile-popup-handler > a{
-    color: #fff;
+    color: #000;
 }
 small {
     font-size: 90%;
