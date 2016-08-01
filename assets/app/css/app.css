@@ -438,13 +438,32 @@ footer .menubar .active>.icon-users,footer .menubar .tab:active>.icon-users{
 .picture-info-box{
 
 }
+.picture-info-box .ic-time{
+    display: block;
+    width: 14px;
+    height: 14px;
+}
+.picture-info-box .ic-time img{
+    width: 100%;
+}
 .picture-info-box .picture-list{
-
+    padding-left: 8px;
+    margin-left: 5px;
+    border-left: 2px solid #ddd;
 }
 .picture-info-box .picture-list .title{
     font-size: 16px;
     color: #7a7a7a;
     padding: 4px 0 0 0;
+}
+.picture-info-box .picture-list .title .point{
+    position: absolute;
+    top: 12px;
+    left: -12px;
+    background: #7c4dff;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
 }
 .picture-info-box .picture-list .title h3{
     font-size: 16px;
