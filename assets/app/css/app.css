@@ -196,10 +196,17 @@ footer .menubar .active>.icon-users,footer .menubar .tab:active>.icon-users{
     line-height: 18px;
 }
 .video-title p .eye{
-    width: 22px;
-    height: 18px;
+    width: 17px;
+    height: 10px;
     display: inline-block;
     background: url(../img/video/eye.png) no-repeat top center;
+    background-size: 100%;
+}
+.video-title p .comment{
+    width: 14px;
+    height: 12px;
+    display: inline-block;
+    background: url(../img/video/comment.png) no-repeat top center;
     background-size: 100%;
 }
 .video-title p .zan{
@@ -226,7 +233,7 @@ footer .menubar .active>.icon-users,footer .menubar .tab:active>.icon-users{
     margin-bottom: 6px;
 }
 .video-list li>.text{
-    background-color: #04C191;
+    background-color: #7b1fa1;
     color: #fff;
 }
 .video-list li>.text h3{
@@ -268,10 +275,21 @@ footer .menubar .active>.icon-users,footer .menubar .tab:active>.icon-users{
     margin-right: 10px;
 }
 .video-bottom p span .comment{
+    width: 14px;
+    height: 12px;
+    display: inline-block;
+    background: url(../img/video/comment.png) no-repeat top center;
+    background-size: 100%;
+}
+.video-bottom p span .zan{
     width: 16px;
     height: 18px;
     display: inline-block;
-    background: url(../img/video/comment.png) no-repeat top center;
+    background: url(../img/video/head01.png) no-repeat top center;
+    background-size: 100%;
+}
+.video-bottom p span .zan.active {
+    background: url(../img/video/head02.png) no-repeat top center;
     background-size: 100%;
 }
 .video-title1{
@@ -399,8 +417,8 @@ footer .menubar .active>.icon-users,footer .menubar .tab:active>.icon-users{
     margin: 6px 0;
 }
 .voteinfo-list .statistics{
-    margin: 0 6px;
-    background: #04C191;
+    margin: 8px 6px;
+    background: #f2f2f2;
     border-radius: 5px;
     padding: 4px 0;
 }
@@ -408,10 +426,10 @@ footer .menubar .active>.icon-users,footer .menubar .tab:active>.icon-users{
     float: left;
     width: 33.33%;
     text-align: center;
-    color: #fff;
+    color: #000;
 }
-.voteinfo-list .option-lsit{
-
+.voteinfo-list .option-list{
+    border-bottom: 1px solid #ddd;
 }
 /*文图直播*/
 .picture-banner{
@@ -559,14 +577,23 @@ a {
     color: #3D4049;
 }
 .mark-success{
-     background: #04c191;
+     background: #7b1fa1;
+}
+.mark-cancel{
+    background: #7c4dff;
 }
 /*修改表单*/
+button.cancel, input[type="button"], .button.cancel{
+    background-color: #9c27b0;
+}
 button.submit, input[type="submit"], .button.submit {
     background-color: #7b1fa1;
 }
 input[type="checkbox"]:checked, input[type="radio"]:checked, .checkbox.active, .radio.active {
     color: #7b1fa1;
+}
+.login .input-box{
+    border-color: #7c4dff;
 }
 /*修改弹窗*/
 .agile-popup{
@@ -587,13 +614,16 @@ footer>.titlebar{
     background-color: #ddd;
 }
 .progress-bar .progress{
-    background-color: #04C191;
+    background-color: #7b1fa1;
 }
 .bg-bai{
     background: #fff;
 }
 .col-lv{
     color: #04C191 !important;
+}
+.col-zi{
+    color: #7c4dff !important;
 }
 .pos-r{
     position: relative;
