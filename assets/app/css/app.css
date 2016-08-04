@@ -3,16 +3,13 @@
     background:#fff;
 }
 .rectbar, .slidebar, .tabbar{
-    color: #727272;
+    color: #666666;
 }
 header .tab:active, header .tab.active{
-    color: #7b1fa1;
+    color: #4ea9de;
 }
 header .titlebar{
-    background:-moz-linear-gradient(left,#7b1fa1,#7c4dff);
-    background:-webkit-gradient(linear,0 50%,100% 50%,from(#7b1fa1),to(#7c4dff));
-    background:-webkit-linear-gradient(left,#7b1fa1,#7c4dff);
-    background:-o-linear-gradient(left,#7b1fa1,#7c4dff);
+    background-color: #4ea9de;
 }
 header .titlebar a,header .titlebar h1{
     color: #fff;
@@ -22,7 +19,7 @@ header .titlebar a,header .titlebar h1{
     line-height: 34px;
 }
 .slidebar .tab:active, .slidebar .tab.active{
-    border-color: #7b1fa1;
+    border-color: #4ea9de;
 }
 .meun-rome{
     position: absolute;
@@ -35,7 +32,7 @@ header .titlebar a,header .titlebar h1{
     height: 35px;
     line-height: 35px;
     font-size: 20px;
-    color: #fff;
+    color: #666666;
     box-shadow: -1px -1px 12px rgba(0, 0, 0, 0.5)
 }
 .meun-rome img{
@@ -53,8 +50,9 @@ header .titlebar a,header .titlebar h1{
 #search-box{
     position: absolute;
     top: 6px;
-    right: 4px;
-    width: 60%;
+    left: 5%;
+    width: 90%;
+    height: 30px;
     color: #fff;
 }
 #search-box .input-box{
@@ -66,18 +64,14 @@ header .titlebar a,header .titlebar h1{
     padding-bottom: 3px;
     color: #fff;
 }
-.searchbar{
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
-    padding: 0 4px;
-}
-.searchbar .input-box{
-    border-color: #7b1fa1;
-    margin-right: 8px;
-}
-.searchbar .btn-search{
+#search-box a.btn-search{
+    color: #999999;
+    margin: 0;
 }
 /*文章列表*/
+.slider-container{
+    height: 240px;
+}
 #new-box{
 
 }
@@ -122,10 +116,10 @@ header .titlebar a,header .titlebar h1{
 }
 .news-bottom>.lable{
     border-radius: 5px;
-    border: #7b1fa1 solid 1px;
+    border: #4ea9de solid 1px;
     padding: 0 5px;
     margin-bottom: 4px;
-    color: #7b1fa1;
+    color: #4ea9de;
 }
 /*背景颜色定义*/
 .bg-hui {
@@ -142,7 +136,7 @@ footer .menubar{
 }
 
 footer .tab:active, footer .tab.active{
- color: #7c4dff;
+ color: #4ea9de;
 }
 footer .menubar .icon-new{
     background: url(../img/menu/menu01-d.png) center center no-repeat;

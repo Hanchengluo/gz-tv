@@ -13,13 +13,9 @@
             <section id="slider_section" data-role="section" class="active">
                 <header>
                     <div class="titlebar">
-                        <h1 id="logo">
-                            <img src="update/top-logo.png" alt="">
-                        </h1>
-                        <div class="right">
-                            <a href="search/search.html">
-                                <i class="icon icon-search"></i>
-                            </a>
+                        <div id="search-box" class="input-box radius6" data-input="clear">
+                            <a class="btn-search"><i class="icon icon-search"></i></a>
+                            <input type="search" placeholder="请输入搜索内容"  class="search" />
                         </div>
                     </div>
                  	<div id="tabbarOuter" data-scroll="horizontal">
@@ -49,7 +45,7 @@
                             </ul>
                         </div>
                         <div class="meun-rome tab" href="#third_section" data-toggle="section">
-                        	<span><img src="assets/app/img/menu/menu-more.png" alt=""></span>
+                        	<span>+</span>
                         </div>
                     </div>
                     <!-- <div id="search-box">
@@ -67,6 +63,21 @@
                             <div id="page1" class="slide" data-role="page" data-scroll="pull">
                                 <div class="scroller">
                                 	<div id="content1">
+                                        <div class="slider-container" id="carousel1">
+                                            <div class="slider-wrapper">
+                                                <div class="slider-slide">
+                                                    <img data-source="update/new-img01.jpg"/>
+                                                    <div class="slide-title">新闻标题1</div>
+                                                </div>
+                                                <div class="slider-slide">
+                                                    <img data-source="update/new-img01.jpg"/>
+                                                    <div class="slide-title">新闻标题2</div>
+                                                </div>
+                                                <div class="slider-slide" style="background-color: yellow;">
+                                                </div>
+                                            </div>
+                                            <div class="slider-pagination"></div>
+                                        </div>
                             		</div>
                                 	<div id="new-box" class="">
                                 		<div class="new-list clearfix" href="news/article-info.html" data-toggle="html">
@@ -219,6 +230,22 @@
         <script type="text/javascript" src="assets/agile/js/agile.js"></script>
         <!-- app -->
         <script type="text/javascript" src="assets/app/js/app.seedsui.js"></script>
+
+        <script type="text/javascript">
+            window.onload=function(){
+                var s1=new Slider("#carousel1",{
+                    "pagination":".slider-pagination",
+                    "loop":true
+                });
+                var s2=new Slider("#carousel2",{
+                    "pagination":".slider-pagination",
+                    "slidesPerView":"3",
+                    "loop":true
+                });
+            }
+        
+        
+        </script>
         <script>
 
         $('#slider_section').on('sectionshow', function(){
