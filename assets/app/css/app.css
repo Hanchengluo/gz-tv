@@ -66,6 +66,17 @@ header .titlebar a,header .titlebar h1{
     padding-bottom: 3px;
     color: #fff;
 }
+.searchbar{
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 0 4px;
+}
+.searchbar .input-box{
+    border-color: #7b1fa1;
+    margin-right: 8px;
+}
+.searchbar .btn-search{
+}
 /*文章列表*/
 #new-box{
 
