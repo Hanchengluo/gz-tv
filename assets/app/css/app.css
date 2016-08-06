@@ -15,8 +15,8 @@ header .titlebar a,header .titlebar h1{
     color: #fff;
 }
 .slidebar .tab, .tabbar .tab{
-    height: 34px;
-    line-height: 34px;
+    height: 40px;
+    line-height: 40px;
 }
 .slidebar .tab:active, .slidebar .tab.active{
     border-color: #4ea9de;
@@ -29,8 +29,8 @@ header .titlebar a,header .titlebar h1{
     right: 0;
     width: 30px;
     text-align: center;
-    height: 35px;
-    line-height: 35px;
+    height: 41px;
+    line-height: 41px;
     font-size: 20px;
     color: #666666;
     box-shadow: -1px -1px 12px rgba(0, 0, 0, 0.5)
@@ -68,10 +68,11 @@ header .titlebar a,header .titlebar h1{
     color: #999999;
     margin: 0;
 }
-/*文章列表*/
-.slider-container{
-    height: 240px;
+.slide .slider_label{
+    color: #fff !important;
+    background-color: #000 !important;
 }
+/*文章列表*/
 #new-box{
 
 }
@@ -100,8 +101,8 @@ header .titlebar a,header .titlebar h1{
     width: 100%;
 }
 .news-bottom{
-    float: left;
-    width: 98%;
+    float: right;
+    width: 64%;
     padding-left: 2%;
     font-size: 12px;
     color: #909090;
@@ -117,7 +118,7 @@ header .titlebar a,header .titlebar h1{
 .news-bottom>.lable{
     border-radius: 5px;
     border: #4ea9de solid 1px;
-    padding: 0 5px;
+    padding: 0 3px;
     margin-bottom: 4px;
     color: #4ea9de;
 }
@@ -338,10 +339,9 @@ footer .menubar .active>.icon-users,footer .menubar .tab:active>.icon-users{
 .titlebar .comment-btn{
     height: 34px;
     line-height: 34px;
-    background-color: #fff;
-    border: 1px solid #7b1fa1;
+    background-color: #4ea9de;
     padding: 0 25px !important;
-    color: #7b1fa1 !important;
+    color: #fff !important;
 }
 /*文章部分*/
 .article-info{
@@ -359,19 +359,20 @@ footer .menubar .active>.icon-users,footer .menubar .tab:active>.icon-users{
 .menu-box li{
     float: left;
     width: 25%;
-    height: 40px;
+    height: 44px;
 }
 .menu-box li span{
     width: 100%;
-    height: 39px;
-    line-height: 39px;
+    height: 43px;
+    line-height: 43px;
     text-align: center;
     display: inline-block;
-    color: #7b1fa1;
+    color: #666666;
     border-bottom: #ddd solid 1px;
 }
 .menu-box li.active span{
-    border-bottom: #7b1fa1 solid 1px;
+    color: #4ea9de;
+    border-bottom: #4ea9de solid 1px;
 }
 #interac-box{
     padding-top: 6px;
@@ -382,13 +383,14 @@ footer .menubar .active>.icon-users,footer .menubar .tab:active>.icon-users{
     display: block;
     width: 100%;
     margin: 0 auto 6px auto;
+    overflow: hidden;
 }
 .interac-list p{
     display: block;
-    padding: 6px 1%;
-    color: #212121;
-    width: 98%;
-    overflow: hidden;
+    padding: 6px;
+    color: #fff;
+    width: 100%;
+    background-color: #4ea9de;
 }
 .timelink{
     display: block;
@@ -410,6 +412,9 @@ footer .menubar .active>.icon-users,footer .menubar .tab:active>.icon-users{
     background: url(../img/video/head02.png) no-repeat top center;
     background-size: 100%;
 }
+.apply-input{
+    margin-top: 200px;
+}
 .voteinfo-list{
 
 }
@@ -422,16 +427,16 @@ footer .menubar .active>.icon-users,footer .menubar .tab:active>.icon-users{
     margin: 6px 0;
 }
 .voteinfo-list .statistics{
-    margin: 8px 6px;
-    background: #f2f2f2;
-    border-radius: 5px;
-    padding: 4px 0;
+    margin: 8px 0;
+    background: #4ea9de;
+    padding: 8px 0;
 }
 .voteinfo-list .statistics li{
     float: left;
-    width: 33.33%;
+    width: 33.1%;
     text-align: center;
-    color: #000;
+    border-right: 1px solid #fff;
+    color: #fff;
 }
 .voteinfo-list .option-list{
     border-bottom: 1px solid #ddd;
@@ -453,10 +458,11 @@ footer .menubar .active>.icon-users,footer .menubar .tab:active>.icon-users{
     float: left;
     padding: 8px 0;
     text-align: center;
-    color: #7b1fa1;
+    color: #666;
 }
 .picture-tab li.active{
-    border-bottom: 2px solid #7b1fa1;
+    color: #4ea9de;
+    border-bottom: 2px solid #4ea9de;
 }
 .picture-info-box{
 
@@ -470,9 +476,7 @@ footer .menubar .active>.icon-users,footer .menubar .tab:active>.icon-users{
     width: 100%;
 }
 .picture-info-box .picture-list{
-    padding-left: 8px;
-    margin-left: 5px;
-    border-left: 2px solid #ddd;
+    
 }
 .picture-info-box .picture-list .title{
     font-size: 16px;
@@ -490,6 +494,8 @@ footer .menubar .active>.icon-users,footer .menubar .tab:active>.icon-users{
 }
 .picture-info-box .picture-list .title h3{
     font-size: 16px;
+    line-height: 32px;
+    margin-left: 4px;
     color: #303436;
 }
 .picture-info-box .picture-list .text{
@@ -592,13 +598,15 @@ button.cancel, input[type="button"], .button.cancel{
     background-color: #9c27b0;
 }
 button.submit, input[type="submit"], .button.submit {
-    background-color: #7b1fa1;
+    background-color: #4ea9de;
 }
 input[type="checkbox"]:checked, input[type="radio"]:checked, .checkbox.active, .radio.active {
-    color: #7b1fa1;
+    color: #4ea9de;
 }
 .login .input-box{
-    border-color: #7c4dff;
+    border-color: #cccccc;
+    border-left: none;
+    border-right: none;
 }
 /*修改弹窗*/
 .agile-popup{
@@ -616,10 +624,10 @@ footer>.titlebar{
     border: none !important;
 }
 .progress-bar{
-    background-color: #ddd;
+    background-color: #e5e5e5;
 }
 .progress-bar .progress{
-    background-color: #7b1fa1;
+    background-color: #4ea9de;
 }
 .bg-bai{
     background: #fff;
@@ -627,8 +635,8 @@ footer>.titlebar{
 .col-lv{
     color: #04C191 !important;
 }
-.col-zi{
-    color: #7c4dff !important;
+.col-lan{
+    color: #4ea9de !important;
 }
 .pos-r{
     position: relative;

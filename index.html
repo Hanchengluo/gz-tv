@@ -62,29 +62,30 @@
                         <div class="scroller">
                             <div id="page1" class="slide" data-role="page" data-scroll="pull">
                                 <div class="scroller">
-                                	<div id="content1">
-                                        <div class="slider-container" id="carousel1">
-                                            <div class="slider-wrapper">
-                                                <div class="slider-slide">
-                                                    <img data-source="update/new-img01.jpg"/>
-                                                    <div class="slide-title">新闻标题1</div>
-                                                </div>
-                                                <div class="slider-slide">
-                                                    <img data-source="update/new-img01.jpg"/>
-                                                    <div class="slide-title">新闻标题2</div>
-                                                </div>
-                                                <div class="slider-slide" style="background-color: yellow;">
-                                                </div>
+                                    <div id="slide" data-role="slider" class="full" style="overflow: hidden; height:auto;">
+                                        <div class="scroller">
+                                            <div class="slide">
+                                                <img data-source="update/new-img-lg01.png" class="full-width"/>
+                                                <div class="slider_label">综合新闻</div>
                                             </div>
-                                            <div class="slider-pagination"></div>
+                                            <div class="slide">
+                                                <img data-source="update/new-img-lg01.png" class="full-width"/>
+                                                <div class="slider_label">综合新闻</div>
+                                            </div>
+                                            <div class="slide">
+                                                <img data-source="update/new-img-lg01.png" class="full-width"/>
+                                                <div class="slider_label">综合新闻</div>
+                                            </div>
                                         </div>
+                                    </div>
+                                	<div id="content1">
                             		</div>
                                 	<div id="new-box" class="">
                                 		<div class="new-list clearfix" href="news/article-info.html" data-toggle="html">
+                                            <div class="img" style="width:32%">
+                                                <img data-source="update/new-img01.jpg" alt="">
+                                            </div>
                                 			<p class="title" style="width:63%">单身母亲被警方带走，背后原因竟是为补贴家用超市行窃包含牙膏牙刷</p>
-                                			<div class="img" style="width:32%">
-                                				<img data-source="update/new-img01.jpg" alt="">
-                                			</div>
                                 			<div class="news-bottom">
                                 				<span>1分钟</span>
                                 				<span>电视台新网部</span>
@@ -117,10 +118,11 @@
                                 			<hr>
                                 		</div>
                                 		<div class="new-list clearfix" href="news/article-info.html" data-toggle="html">
+                                            <div class="img" style="width:32%">
+                                                <img data-source="update/new-img01.jpg" alt="">
+                                            </div>
                                 			<p class="title" style="width:63%">单身母亲被警方带走，背后原因竟是为补贴家用超市行窃包含牙膏牙刷</p>
-                                			<div class="img" style="width:32%">
-                                				<img data-source="update/new-img01.jpg" alt="">
-                                			</div><div class="news-bottom">
+                                            <div class="news-bottom">
                                 				<span>4分钟</span>
                                 				<span>电视台新网部</span>
                                 				<span><i class="icon-chatdot"></i>66评论</span>
@@ -149,10 +151,11 @@
                                 			</div><hr>
                                 		</div>
                                 		<div class="new-list clearfix" href="news/article-info.html" data-toggle="html">
+                                            <div class="img" style="width:32%">
+                                                <img data-source="update/new-img01.jpg" alt="">
+                                            </div>
                                 			<p class="title" style="width:63%">单身母亲被警方带走，背后原因竟是为补贴家用超市行窃包含牙膏牙刷</p>
-                                			<div class="img" style="width:32%">
-                                				<img data-source="update/new-img01.jpg" alt="">
-                                			</div><div class="news-bottom">
+                                			<div class="news-bottom">
                                 				<span>12分钟</span>
                                 				<span>电视台新网部</span>
                                 				<span><i class="icon-chatdot"></i>66评论</span>
@@ -231,29 +234,41 @@
         <!-- app -->
         <script type="text/javascript" src="assets/app/js/app.seedsui.js"></script>
 
-        <script type="text/javascript">
-            window.onload=function(){
-                var s1=new Slider("#carousel1",{
-                    "pagination":".slider-pagination",
-                    "loop":true
-                });
-                var s2=new Slider("#carousel2",{
-                    "pagination":".slider-pagination",
-                    "slidesPerView":"3",
-                    "loop":true
-                });
-            }
-        
-        
-        </script>
+
         <script>
 
         $('#slider_section').on('sectionshow', function(){
             A.Component.scroll('#tabbarOuter');
         });
         $('#slider_article').on('articleload', function(){
+            A.Slider('#slide', {
+                dots : 'right'
+            });
             A.Slider('#sliderPage', {
                 dots : 'hide'
+            });
+        });
+        $('#slide img').on(A.options.clickEvent, function(){
+            //var $el = $(this);
+            //A.showToast($el.siblings('.slider_label').html());
+            A.Component.pictureShow({
+                id : 'picture',
+                index : $("#slide .slide").index($("#slide .slide.active")),
+                title : '这是默认标题',
+                list : [
+                    {
+                        imgURL : 'update/new-img-lg01.png',
+                        content : '这是第一条新闻'
+                    },
+                    {
+                        imgURL : 'update/new-img-lg01.png',
+                        content : '这是第二条新闻'
+                    },
+                    {
+                        imgURL : 'update/new-img-lg01.png',
+                        content : '这是第三条新闻'
+                    }
+                ]
             });
         });
         </script>
