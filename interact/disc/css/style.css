@@ -1,4 +1,4 @@
-.g-wrap {width: 100%;overflow: hidden;background: #4ea9de url(../../../update/disc-bg1.png) top center no-repeat;background-size: 100% auto; min-height:100%;padding-bottom: 20px;margin-top: 44px;}
+.g-wrap {width: 100%;overflow: hidden;background: #c72222;min-height:100%;padding-bottom: 20px;margin-top: 44px;}
 
 .logo-sec {width: 100%;overflow: hidden;}
 .logo-sec p {width: 100%;height:30px;line-height: 30px;text-align: center;margin-top: -40px;color:#fff;}
@@ -10,27 +10,27 @@
 .pt5 {padding-top: 5px;}
 
 .m-title {width: 100%;height:15px;margin-top: 10px;border-bottom: 1px solid #ffb820;margin-bottom: 30px;}
-.m-title h3 {width: 35%;height:30px;line-height: 30px;text-align: center;color:#fff;background: #c72222;margin:0 auto;font-size: 1.3em;font-weight: bold;}
+.m-title h3 {width: 35%;height:30px;line-height: 30px;text-align: center;color:#ffb820;background: #c72222;margin:0 auto;font-size: 1.3em;font-weight: bold;}
 
-.peolist {width: 100%;overflow: hidden;background: #2274a4;}
+.peolist {width: 100%;overflow: hidden;background: #b21b1b;}
 .peolist dd {width: 92%;overflow: hidden;padding:14px 0;border-bottom: 1px dashed #ffb820;margin:0 auto;}
 .peolist dd:nth-of-type(3n) {border-bottom: none;}
 
 .peolist dd img {float: left;}
 .peolist dd div.right {width: 75%;float: right;}
-.peolist dd div.right span {width: 100%;height: 30px;color:#fff;display: block;}
+.peolist dd div.right span {width: 100%;height: 30px;color:#ffc5c5;display: block;}
 .peolist dd div.right span h2 {font-size: 1.2em;float: left;width: 60%;}
 .peolist dd div.right span em {width: 40%;float: right;font-size: 0.9em;line-height: 22px;}
 .peolist dd div.right p {width: 100%;line-height: 16px;font-size: 1.1em;color:#ffb820;}
 
-.einfo {width: 92%;overflow: hidden;padding:14px 4%;background: #2274a4;}
+.einfo {width: 92%;overflow: hidden;padding:14px 4%;background: #b21b1b;}
 .einfo p {line-height: 24px;color:#ffb820;}
 
 .morebtn {width: 100%;height:30px;line-height: 30px;text-align: center;background:#b21b1b;color:#ffb820;margin-top: 10px;}
 
 /*转盘*/
-.big-border {width: 90%;background: #fff;border-radius: 50%;box-shadow: 0 -2px 2px #f2502f;padding:5%;position: relative;-webkit-transition: all 4s cubic-bezier(1, 0.00001, 0.00001, 1);transition: all 4s cubic-bezier(1, 0.00001, 0.00001, 1);}
-.main-wheel {width: 80%; height: 80%; margin: 36% 6% 0 6%; background: url(../images/shadow.png) no-repeat center bottom;background-size:100%;padding-bottom: 15px;}
+.big-border {width: 90%;background: #e44025;border-radius: 50%;box-shadow: 0 -2px 2px #f2502f;padding:5%;position: relative;-webkit-transition: all 4s cubic-bezier(1, 0.00001, 0.00001, 1);transition: all 4s cubic-bezier(1, 0.00001, 0.00001, 1);}
+.main-wheel {background: url(../images/shadow.png) no-repeat center bottom;background-size:100%;padding-bottom: 15px;}
 .small-border {width: 100%;border-radius: 50%;background-size: 100%;position: relative;}
 .middle {position: absolute; left: 25%; top:25%; z-index: 100;-webkit-transition: all 4s cubic-bezier(1, 0.00001, 0.00001, 1);transition: all 4s cubic-bezier(1, 0.00001, 0.00001, 1);}
 .stars {width: 4%;height:4%;border-radius: 50%;background: #ffb820;position: absolute;}
@@ -127,7 +127,7 @@ footer {width: 100%;line-height: 24px;color:#ffb820;text-align: center;margin-to
 
 
 
-.g-num {width: 80%;height:40px;background: #2274a4;border-radius:20px;border:1px solid #2274a4;margin:0 auto;margin-top: 10px;line-height: 40px;text-align: center;color:#fff;font-size: 1.3em}
+.g-num {width: 80%;height:40px;background: #d82828;border-radius:20px;border:1px solid #e44025;margin:0 auto;margin-top: 10px;line-height: 40px;text-align: center;color:#fff;font-size: 1.3em}
 .g-num em {margin:0 5px;color:#ffd737;}
 
 .dialog {width: 100%;height:100%;background: rgba(0,0,0,0.7);position: fixed;top:0;z-index: 1000;font-size: 1.2em;display: none;}

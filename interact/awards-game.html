@@ -21,14 +21,14 @@
                         </ul>
                     </div>
                 </header>
-                <article  data-role="article" id="slider_article" class="active" style="top:44px;bottom:54px;">
+                <article  data-role="article" id="slider_article" class="active" style="top:46px;bottom:54px;">
                     <div id="sliderPage" data-role="slider" class="full">
                         <div class="scroller">
                             <div id="page1" class="slide" data-role="page" data-scroll="pullup">
                                 <div class="scroller">
                                     <div id="interac-box" class="">
                                         <div class="interac-list" href="awards-disc.html" data-toggle="html">
-                                            <img src="../update/awards-game01.jpg"  width="100%" alt="">   
+                                            <img src="../update/awards-game01.jpg"  width="100%" alt="">
                                             <p>2013中海地产“幸福达人秀”全城报名即将开启 </p>
                                         </div>
                                         <div class="interac-list" href="awards-scratch.html" data-toggle="html">
@@ -106,7 +106,7 @@
                 refresh.on('pullup', function(){
                     //setTimeout是模拟异步效果
                     setTimeout(function(){
-                        $('#content2').append('<div class="interac-list" href="awards-scratch.html" data-toggle="html"><img src="../update/awards-game01.jpg" width="100%" alt=""><p>“互联网”五星服务大赛——我是人气王投票活动已 </p></div>');
+                        $('#content2').append('<div class="interac-list" href="awards-disc.html" data-toggle="html"><img src="../update/awards-game01.jpg" width="100%" alt=""><p>“异步加载数据”五星服务大赛——我是人气王投票活动已经正式开始了，赶紧发动小伙伴投票吧 </p></div>');
                         refresh.refresh();//当scroll区域有dom结构变化需刷新
                     }, 1000);
                 });
