@@ -12,16 +12,6 @@
         <div id="section_container">
             <section id="slider_section" data-role="section" class="active">
                 <header>
-                    <div class="titlebar">
-                        <h1 id="logo">
-                            <img src="../update/top-logo.png" alt="">
-                        </h1>
-                        <div class="right">
-                            <a href="../search/search.html">
-                                <i class="icon icon-search"></i>
-                            </a>
-                        </div>
-                    </div>
                     <div id="tabbarOuter" data-scroll="horizontal">
                         <div class="scroller" style="width:500px;">
                             <ul class="slidebar" style="padding-right:30px;">
@@ -49,11 +39,11 @@
                             </ul>
                         </div>
                         <div class="meun-rome tab" href="#third_section" data-toggle="section">
-                            <span><img src="../assets/app/img/menu/menu-more.png" alt=""></span>
+                            <span>+</span>
                         </div>
                     </div>
                 </header>
-                <article  data-role="article" id="slider_article" class="active" style="top:86px;bottom:54px;background-color: #f8f8f8;">
+                <article  data-role="article" id="slider_article" class="active" style="top:44px;bottom:54px;background-color: #f8f8f8;">
                     <div id="sliderPage" data-role="slider" class="full">
                         <div class="scroller">
                             <div id="page1" class="slide" data-role="page" data-scroll="pullup">
@@ -68,8 +58,9 @@
                                                     </span>
                                                     <span class="float-left"><i class="eye"></i></span>
                                                     <span class="float-left">新华视频平台</span>
-                                                    <span class="float-right"><i class="comment"></i>2314</span>
-                                                    <span class="float-right" style="margin-right: 10px;"><i class="zan active"></i>123万次播放</span>
+                                                    <span class="float-right"><i class="zan active"></i>2535</span>
+                                                    <span class="float-right" style="margin-right: 10px;"><i class="comment"></i>2314</span>
+                                                    <span class="float-right" style="margin-right: 10px;">123万次播放</span>
                                                 </p>
                                               </div>
                                               <p class="video-title1">中华民族过年习俗一览
@@ -85,8 +76,9 @@
                                                     </span>
                                                     <span class="float-left"><i class="eye"></i></span>
                                                     <span class="float-left">新华视频平台</span>
-                                                    <span class="float-right"><i class="comment"></i>2314</span>
-                                                    <span class="float-right" style="margin-right: 10px;"><i class="zan active"></i>123万次播放</span>
+                                                    <span class="float-right"><i class="zan active"></i>2354</span>
+                                                    <span class="float-right" style="margin-right: 10px;"><i class="comment"></i>2314</span>
+                                                    <span class="float-right" style="margin-right: 10px;">123万次播放</span>
                                                 </p>
                                               </div>
                                               <p class="video-title1">中华民族过年习俗一览
@@ -189,7 +181,7 @@
                 refresh.on('pullup', function(){
                     //setTimeout是模拟异步效果
                     setTimeout(function(){
-                        $('#content2').append('<div class="margin6 nolrmargin pos-r" href="video-info.html" data-toggle="html"><img id="btn_t_top" src="../update/video01.jpg" height="" width="100%" alt=""><div class="video-bottom bg-bai"><p class="clearfix notbmargin"><span class="user-img radiusround float-left"><img src="../update/user-img.jpg" alt=""></span><span class="float-left"><i class="eye"></i></span><span class="float-left">新华视频平台</span><span class="float-right"><i class="comment"></i>2314</span><span class="float-right" style="margin-right: 10px;"><i class="zan active"></i>123万次播放</span></p></div><p class="video-title1">中华民族过年习俗一览</p><span class="video-player"></span><hr></div>');
+                        $('#content2').append('<div class="margin6 nolrmargin pos-r" href="video-info.html" data-toggle="html"><img id="btn_t_top" src="../update/video01.jpg" height="" width="100%" alt=""><div class="video-bottom bg-bai"><p class="clearfix notbmargin"><span class="user-img radiusround float-left"><img src="../update/user-img.jpg" alt=""></span><span class="float-left"><i class="eye"></i></span><span class="float-left">新华视频平台</span><span class="float-right"><i class="zan active"></i>2535</span><span class="float-right" style="margin-right: 10px;"><i class="comment"></i>2314</span><span class="float-right" style="margin-right: 10px;">123万次播放</span></p></div><p class="video-title1">中华民族过年习俗一览</p><span class="video-player"></span><hr></div>');
                         refresh.refresh();//当scroll区域有dom结构变化需刷新
                     }, 1000);
                 });

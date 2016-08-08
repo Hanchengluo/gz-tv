@@ -239,8 +239,11 @@ footer .menubar .active>.icon-users,footer .menubar .tab:active>.icon-users{
     margin-bottom: 6px;
 }
 .video-list li>.text{
-    background-color: #7b1fa1;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
+    border-left: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
 }
 .video-list li>.text h3{
     padding: 2px  4px;
@@ -572,9 +575,19 @@ footer .menubar .active>.icon-users,footer .menubar .tab:active>.icon-users{
 }
 .list-box .mark-pos{
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 14px;
+    right: -22px;
     border-radius: 0;
+    content: "";
+    height: 0;
+    width: 46px;
+    color: #fff;
+    border-width: 0px 18px 18px 18px;
+    border-style: none solid solid;
+    padding: none;
+    text-align: center;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
 }
 
 /*注册登录*/
@@ -588,14 +601,25 @@ a {
     color: #3D4049;
 }
 .mark-success{
-     background: #7b1fa1;
+    background-color: #fff;
+    border: 1px solid #cccccc;
+    color: #333333;
+}
+.mark-done{
+    background: none !important;
+    border-color: transparent transparent #4ea9de;
 }
 .mark-cancel{
-    background: #7c4dff;
+    background: none !important;
+    border-color: transparent transparent #dc2b21;
+}
+.mark-disable{
+    background: none !important;
+    border-color: transparent transparent #cccccc;
 }
 /*修改表单*/
 button.cancel, input[type="button"], .button.cancel{
-    background-color: #9c27b0;
+    background-color: #4ea9de;
 }
 button.submit, input[type="submit"], .button.submit {
     background-color: #4ea9de;
@@ -611,7 +635,7 @@ input[type="checkbox"]:checked, input[type="radio"]:checked, .checkbox.active, .
 /*修改弹窗*/
 .agile-popup{
     background: #fff !important;
-    color: #7b1fa1;
+    color: #4ea9de;
 }
 .agile-popup-handler > a{
     color: #000;
@@ -655,4 +679,18 @@ border: none;
 .justify{
     padding: 10px 0 10px 2px ;
     max-width: 180px;
+}
+/*搜索页面*/
+.hot-search{
+    padding: 4px 1%;
+}
+.hot-search h1{
+    font-weight: normal;
+    color: #999999;
+    margin-bottom: 4px;
+}
+.hot-search .link{
+    display: inline-block;
+    width: 49%;
+    line-height: 28px;
 }
