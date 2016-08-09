@@ -18,8 +18,16 @@
                         </a>
                         <h1 class="text-center">我的抽奖</h1>
                     </div>
+                    <div class="menu-box clearfix">
+                        <ul>
+                            <li class="active" href="user-lottery.html" data-toggle="html"><span>全部</span></li>
+                            <li href="user-lottery.html" data-toggle="html"><span>待兑换</span></li>
+                            <li href="user-lottery.html" data-toggle="html"><span>已兑换</span></li>
+                            <li href="user-lottery.html" data-toggle="html"><span>已过期</span></li>
+                        </ul>
+                    </div>
                 </header>
-                <article  data-role="article" id="slider_article" class="active" style="top:46px;bottom:0;background-color: #f8f8f8;">
+                <article  data-role="article" id="slider_article" class="active" style="top:86px;bottom:0;background-color: #f8f8f8;">
                     <div id="sliderPage" data-role="slider" class="full">
                         <div class="scroller">
                             <div id="page1" class="slide" data-role="page" data-scroll="pullup">
@@ -31,7 +39,6 @@
                                             <p>兑换码：HSD13412345678</p>
                                             <p>兑换地址：广东省会展中心数码大厦1206室卓商网络</p>
                                             <p>有效时间：2016-7-18 至 2016-8-18 </p>
-                                            <span class="mark-cancel mark-pos"> 待兑换</span>
                                         </div>
                                         <div class="margin6 nolrmargin list-box padding6 ">
                                             <p class="title">超市找零刮刮卡到货啦，快来抽奖领取吧</p>
@@ -39,7 +46,6 @@
                                             <p>兑换码：HSD13412345678</p>
                                             <p>兑换地址：广东省会展中心数码大厦1206室卓商网络</p>
                                             <p>有效时间：2016-7-18 至 2016-8-18 </p>
-                                            <span class="mark-success mark-pos"> 已兑换</span>
                                         </div>
                                         <div class="margin6 nolrmargin list-box padding6 ">
                                             <p class="title">每天幸运大抽奖，积分天天送不停！</p>
@@ -47,7 +53,6 @@
                                             <p>兑换码：HSD13412345678</p>
                                             <p>兑换地址：广东省会展中心数码大厦1206室卓商网络</p>
                                             <p>有效时间：2016-7-18 至 2016-8-18 </p>
-                                            <span class="mark-disable mark-pos"> 已结束</span>
                                         </div>
                                         <div class="margin6 nolrmargin list-box padding6 ">
                                             <p class="title">青年农场面试圈，你敢挂我就敢送</p>
@@ -55,7 +60,6 @@
                                             <p>兑换码：HSD13412345678</p>
                                             <p>兑换地址：广东省会展中心数码大厦1206室卓商网络</p>
                                             <p>有效时间：2016-7-18 至 2016-8-18 </p>
-                                            <span class="mark-disable mark-pos"> 已过期</span>
                                         </div>
 
                                         <div id="content2">
@@ -101,7 +105,7 @@
                 refresh.on('pullup', function(){
                     //setTimeout是模拟异步效果
                     setTimeout(function(){
-                        $('#content2').prepend('<div class="margin6 nolrmargin list-box padding6"><p class="title">越秀星汇金www沙开发区大型相亲会火热报名中</p><p>奖品：iPhone 6s 64G</p><p>兑换码：HSD13412345678</p><p>兑换地址：广东省会展中心数码大厦1206室卓商网络</p><p>有效时间：2016-7-18 至 2016-8-18 </p><span class="mark-disable mark-pos"> 已过期</span></div>');
+                        $('#content2').prepend('<div class="margin6 nolrmargin list-box padding6"><p class="title">越秀星汇金www沙开发区大型相亲会火热报名中</p><p>奖品：iPhone 6s 64G</p><p>兑换码：HSD13412345678</p><p>兑换地址：广东省会展中心数码大厦1206室卓商网络</p><p>有效时间：2016-7-18 至 2016-8-18 </p></div>');
                         refresh.refresh();//当scroll区域有dom结构变化需刷新
                     }, 1000);
 

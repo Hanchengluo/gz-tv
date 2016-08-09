@@ -12,6 +12,15 @@
         <div id="section_container">
             <section id="slider_section" data-role="section" class="active">
                 <header>
+                    <div class="titlebar">
+                        <a class="left" href="#left_push_aside" data-toggle="aside" >
+                            <i class="icon icon-menudot"></i>
+                        </a>
+                        <h1 class="text-center">互动</h1>
+                        <a class="right" href="search/search.html" >
+                            <i class="icon icon-search"></i>
+                        </a>
+                    </div>
                     <div class="menu-box clearfix">
                         <ul>
                             <li href="index.html" data-toggle="html"><span>在线投票</span></li>
@@ -21,7 +30,7 @@
                         </ul>
                     </div>
                 </header>
-                <article  data-role="article" id="slider_article" class="active" style="top:46px;bottom:54px;">
+                <article  data-role="article" id="slider_article" class="active" style="top:86px;">
                     <div id="sliderPage" data-role="slider" class="full">
                         <div class="scroller">
                             <div id="page1" class="slide" data-role="page" data-scroll="pullup">
@@ -52,13 +61,22 @@
                         </div>
                     </div>
                 </article>
-                <footer>
+            </section>
+        </div>
+
+        <div id="aside_container">
+            <aside id="left_push_aside" data-position="left" data-transition="push" style="background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #e21e1e), color-stop(1, #ea5d5d));">
+                <div class="padded">
+                    <div class="user-img ">
+                        <img class="photo" src="../update/myuser-img.jpg" alt="">
+                        <p style="text-align: center;">用户名</p>
+                    </div>
                     <ul class="menubar">
                         <li class="tab" href="../index.html" data-toggle="html">
                             <i class="icon icon-new"></i>
                             <label class="tab-label">资讯</label>
                         </li>
-                        <li class="tab" href="../video/index.html" data-toggle="html">
+                        <li class="tab" href="video/index.html" data-toggle="html">
                             <i class="icon icon-viode"></i>
                             <label class="tab-label">视频</label>
                         </li>
@@ -66,13 +84,13 @@
                             <i class="icon icon-interact"></i>
                             <label class="tab-label">互动</label>
                         </li>
-                        <li class="tab" href="../user/index.html" data-toggle="html">
+                        <li class="tab" href="user/index.html" data-toggle="html">
                             <i class="icon icon-users"></i>
                             <label class="tab-label">我的</label>
                         </li>
                     </ul>
-                </footer>
-            </section>
+                </div>
+            </aside>
         </div>
 
 

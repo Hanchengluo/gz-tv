@@ -18,8 +18,14 @@
                         </a>
                         <h1 class="text-center">我的报名</h1>
                     </div>
+                    <div class="picture-tab clearfix">
+                        <ul>
+                            <li class="active" href="user-apply.html" data-toggle="html">进行中</li>
+                            <li  href="user-apply.html" data-toggle="html">已结束</li>
+                        </ul>
+                    </div>
                 </header>
-                <article  data-role="article" id="slider_article" class="active" style="top:46px;bottom:0;background-color: #f8f8f8;">
+                <article  data-role="article" id="slider_article" class="active" style="top:86px;bottom:0;background-color: #f8f8f8;">
                     <div id="sliderPage" data-role="slider" class="full">
                         <div class="scroller">
                             <div id="page1" class="slide" data-role="page" data-scroll="pullup">
@@ -32,7 +38,6 @@
                                             <p>地址：广东省会展中心数码大厦1206室卓商网络</p>
                                             <p>性别：男</p>
                                             <p>兴趣爱好：吃饭、打游戏。</p>
-                                            <span class="mark-success mark-pos"> 已报名</span>
                                         </div>
                                         <div class="margin6 nolrmargin list-box padding6 ">
                                             <p class="title">越秀星汇金沙开发区大型相亲会火热报名中</p>
@@ -41,7 +46,6 @@
                                             <p>地址：广东省会展中心数码大厦1206室卓商网络</p>
                                             <p>性别：男</p>
                                             <p>兴趣爱好：吃饭、打游戏。</p>
-                                            <span class="mark-disable mark-pos"> 已结束</span>
                                         </div>
                                         <div class="margin6 nolrmargin list-box padding6 ">
                                             <p class="title">越秀星汇金沙开发区大型相亲会火热报名中</p>
@@ -50,7 +54,6 @@
                                             <p>地址：广东省会展中心数码大厦1206室卓商网络</p>
                                             <p>性别：男</p>
                                             <p>兴趣爱好：吃饭、打游戏。</p>
-                                            <span class="mark-disable mark-pos"> 已结束</span>
                                         </div>
                                         <div class="margin6 nolrmargin list-box padding6 ">
                                             <p class="title">越秀星汇金沙开发区大型相亲会火热报名中</p>
@@ -59,7 +62,6 @@
                                             <p>地址：广东省会展中心数码大厦1206室卓商网络</p>
                                             <p>性别：男</p>
                                             <p>兴趣爱好：吃饭、打游戏。</p>
-                                            <span class="mark-success mark-pos"> 已报名</span>
                                         </div>
 
                                         <div id="content2">
@@ -105,7 +107,7 @@
                 refresh.on('pullup', function(){
                     //setTimeout是模拟异步效果
                     setTimeout(function(){
-                        $('#content2').prepend('<div class="margin6 nolrmargin list-box padding6"><p class="title">越秀星汇金www沙开发区大型相亲会火热报名中</p><p>姓名：江东小霸王</p><p>手机：13412345678</p><p>地址：广东省会展中心数码大厦1206室卓商网络</p><p>性别：男</p><p>兴趣爱好：吃饭、打游戏。</p><span class="mark-success mark-pos"> 已报名</span></div>');
+                        $('#content2').prepend('<div class="margin6 nolrmargin list-box padding6"><p class="title">越秀星汇金www沙开发区大型相亲会火热报名中</p><p>姓名：江东小霸王</p><p>手机：13412345678</p><p>地址：广东省会展中心数码大厦1206室卓商网络</p><p>性别：男</p><p>兴趣爱好：吃饭、打游戏。</p></div>');
                         refresh.refresh();//当scroll区域有dom结构变化需刷新
                     }, 1000);
 
