@@ -30,23 +30,30 @@
         -webkit-box-align: center;
         -webkit-align-items: center;
         align-items: center;
-        background: #e21e1e;
+        background:-moz-linear-gradient(top,#fff,#ddd);
+        background:-webkit-gradient(linear,0 0%,0% 100%,from(#fff),to(#ddd));
+        background:-webkit-linear-gradient(top,#fff,#ddd);
+        background:-o-linear-gradient(top,#fff,#ddd);
         min-height: 44px;
         box-sizing: border-box;
     }
     .titlebar h1{
         font-size: 17px;
-        color: #fff;
+        color: #000;
         width: 88%;
         padding-right: 6%;
-        text-align: center; 
+        text-align: left; 
     }
     .icon-arrowleft{
-        width: 6%;
+        width: 24px;
+        height: 24px;
+        display: inline-block;
         font-size: 30px;
         font-family: "宋体";
         color: #fff;
         margin-left: 4px;
+        background: url(../assets/app/img/menu/icon-left.png) left center no-repeat;
+        background-size: 74%;
     }
     </style>
 </head>
@@ -54,7 +61,7 @@
 <header>
     <div class="titlebar">
         <a class="left" href="javascript:history.go(-1);">
-            <i class="icon icon-arrowleft"><</i>
+            <i class="icon icon-arrowleft"></i>
         </a>
         <h1 class="text-center">有奖游戏</h1>
     </div>
