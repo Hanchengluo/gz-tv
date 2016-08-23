@@ -14,9 +14,19 @@
                 <header>
                     <div class="titlebar">
                         <a class="left" href="#left_push_aside" data-toggle="aside" >
-                            <i class="icon icon-menudot"></i>
+                            <i class="icon icon-menudot icon-menupoint"></i>
                         </a>
-                        <h1 class="text-center">视频</h1>
+                        <ul class="menubar">
+                            <li class="tab" href="../index.html" data-toggle="html">
+                                <label class="tab-label">资讯</label>
+                            </li>
+                            <li class="tab active" href="index.html" data-toggle="html">
+                                <label class="tab-label">视频</label>
+                            </li>
+                            <li class="tab" href="../interact/index.html" data-toggle="html" style="border-right:none;">
+                                <label class="tab-label">互动</label>
+                            </li>
+                        </ul>
                         <a class="right" href="../search/search.html" >
                             <i class="icon icon-search"></i>
                         </a>
@@ -30,7 +40,7 @@
                                 <li class="tab active" data-role="tab" href="index.html" data-toggle="html">
                                     <label class="tab-label">人文</label>
                                 </li>
-                                <li class="tab" data-role="tab" href="1.html" data-toggle="html">
+                                <li class="tab" data-role="tab" href="index.html" data-toggle="html">
                                     <label class="tab-label">娱乐</label>
                                 </li>
                                 <li class="tab" data-role="tab" href="index.html" data-toggle="html">
@@ -47,7 +57,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="meun-rome tab" href="#third_section" data-toggle="section">
+                        <div class="meun-rome tab" href="#right_push_aside" data-toggle="aside">
                             <span>+</span>
                         </div>
                     </div>
@@ -104,12 +114,12 @@
                 </article>
             </section>
 
-            <section id="third_section" data-role="section">
+        </div>
+
+        <div id="aside_container">
+            <aside id="right_push_aside" data-position="right" data-transition="push">
                 <header>
                     <div class="titlebar">
-                        <a class="left" data-toggle="back" >
-                            <i class="icon icon-arrowleft"></i>
-                        </a>
                         <h1 class="text-center">类别选择</h1>
                     </div>
                 </header>
@@ -129,35 +139,35 @@
                         </div>
                     </div>
                 </article>
-            </section>
-
+            </aside>
         </div>
 
         <div id="aside_container">
-            <aside id="left_push_aside" data-position="left" data-transition="push" style="background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #e21e1e), color-stop(1, #ea5d5d));">
+            <aside id="left_push_aside" data-position="left" data-transition="push" style="background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #232429), color-stop(1, #616773));">
                 <div class="padded">
                     <div class="user-img ">
                         <img class="photo" src="../update/myuser-img.jpg" alt="">
                         <p style="text-align: center;">用户名</p>
                     </div>
-                    <ul class="menubar">
-                        <li class="tab" href="../index.html" data-toggle="html">
-                            <i class="icon icon-new"></i>
-                            <label class="tab-label">资讯</label>
-                        </li>
-                        <li class="tab active" href="index.html" data-toggle="html">
-                            <i class="icon icon-viode"></i>
-                            <label class="tab-label">视频</label>
-                        </li>
-                        <li class="tab" href="../interact/index.html" data-toggle="html">
-                            <i class="icon icon-interact"></i>
-                            <label class="tab-label">互动</label>
-                        </li>
-                        <li class="tab" href="../user/index.html" data-toggle="html">
-                            <i class="icon icon-users"></i>
-                            <label class="tab-label">我的</label>
-                        </li>
-                    </ul>
+                    <hr>
+                    <div class="user-list">
+                        <div class="title" href="../user/user-apply.html" data-toggle="html">
+                            <a class="active" href="../user/user-apply.html"><i style="background:url(../assets/app/img/user/apply.png"></i></a>
+                            <span>我的报名</span>
+                        </div>
+                        <div class="title" href="../user/user-lottery.html" data-toggle="html">
+                            <a href="../user/user-lottery.html"><i style="background:url(../assets/app/img/user/lottery.png)"></i></a>
+                            <span>我的抽奖</span>
+                        </div>
+                        <div class="title" href="../user/user-text.html" data-toggle="html">
+                            <a href="../user/user-text.html"><i style="background:url(../assets/app/img/user/user.png"></i></a>
+                            <span>我的资料</span>
+                        </div>
+                        <div class="title" href="../user/user-settings.html" data-toggle="html">
+                            <a href="../user/user-settings.html"><i style="background:url(../assets/app/img/user/settings.png)"></i></a>
+                            <span>账号设置</span>
+                        </div>
+                    </div>
                 </div>
             </aside>
         </div>

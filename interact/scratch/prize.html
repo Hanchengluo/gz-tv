@@ -58,16 +58,31 @@
                 -webkit-box-align: center;
                 -webkit-align-items: center;
                 align-items: center;
-                background: #e21e1e;
+                background:-moz-linear-gradient(top,#fff,#ddd);
+		        background:-webkit-gradient(linear,0 0%,0% 100%,from(#fff),to(#ddd));
+		        background:-webkit-linear-gradient(top,#fff,#ddd);
+		        background:-o-linear-gradient(top,#fff,#ddd);
                 min-height: 44px;
                 box-sizing: border-box;
             }
+            .titlebar h1{
+		        font-size: 17px;
+		        color: #000;
+		        width: 88%;
+		        padding-right: 6%;
+		        text-align: left; 
+		        font-weight: normal;
+		    }
             .icon-arrowleft{
+                width: 24px;
+                height: 24px;
+                display: inline-block;
                 font-size: 30px;
                 font-family: "宋体";
                 color: #fff;
                 margin-left: 4px;
-                text-decoration: blink;
+                background: url(../../assets/app/img/menu/icon-left.png) left center no-repeat;
+                background-size: 74%;
             }
     </style>
 </head>
@@ -75,9 +90,9 @@
 <header>
 <div class="titlebar">
     <a class="icon-arrowleft" href="javascript:history.go(-1);">
-        <
+        
     </a>
-    <h1 class="text-center"></h1>
+    <h1 class="text-center">获奖结果</h1>
 </div>
 </header>
 	<img src="img/banner2.png" class="banner2"/>

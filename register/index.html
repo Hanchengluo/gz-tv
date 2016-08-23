@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-        <title>电视台app生成器模板方案一</title>
+        <title>电视台app生成器模板方案六</title>
         <link rel="stylesheet" href="../assets/agile/css/agile.layout.css">
         <link rel="stylesheet" href="../assets/third/seedsui/plugin/seedsui/seedsui.min.css">
         <link rel="stylesheet" href="../assets/app/css/app.css">
@@ -12,25 +12,35 @@
         <div id="section_container">
             <section id="slider_section" data-role="section" class="active">
                 <header>
-                    <div class="titlebar">
+                    <div class="titlebar titlebar1">
                         <a class="left" data-toggle="back" >
-                            <i class="icon icon-arrowleft"></i>
+                            <i class="icon"></i>
                         </a>
-                        <h1 class="text-center">用户注册</h1>
+                        <h1 class="text-left">用户注册</h1>
                         <a class="right" href="../login/index.html">登录</a>
                     </div>
                 </header>
                 <article id="main_article" data-role="article" class="active" style="top:44px;bottom:0;background-color: #fafafa;">
                     <div class="register-box">
-                        <div id="logo-box">
-                            <img src="../update/logo.png" width="100%" alt="">
-                        </div>
-                        <div class="row-right input-box radius4 margin12">
+                        <div class="row-right input-box">
+                            <i class="icon icon-phone color-placeholder col-orange"></i>
                             <input type="text" placeholder="输入手机号码" name="username" value="">
+                            <bottom class="row-right radius4 button block submit margin4" style="line-height: 40px;">获取验证码</bottom>
+                        </div>
+                        <div class="row-right input-box tbpadding4">
+                            <input type="text" placeholder="输入验证码" name="username" value="">
+                        </div>
+                        <div class="row-right input-box tbpadding4">
+                            <i class="icon icon-lock2 color-placeholder col-orange"></i>
+                            <input type="text" placeholder="输入密码" name="username" value="">
+                        </div>
+                        <div class="row-right input-box tbpadding4">
+                            <i class="icon icon-lock2 color-placeholder col-orange"></i>
+                            <input type="text" placeholder="再次输入密码" name="username" value="">
                         </div>
                         <br>
                         <div class="voteinfo-btn margin12">
-                            <a class="radius4 button block submit" href="set-password.html">
+                            <a class="radius4 button block submit" href="set-name.html">
                                 <label>下一步</label>
                             </a>
                         </div>
