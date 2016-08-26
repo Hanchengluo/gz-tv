@@ -346,7 +346,7 @@ footer .menubar .active>.icon-users,footer .menubar .tab:active>.icon-users{
     line-height: 34px;
     background-color: #fff;
     border: 1px solid #7b1fa1;
-    padding: 0 25px !important;
+    padding: 0 24px !important;
     color: #7b1fa1 !important;
 }
 /*文章部分*/
@@ -355,6 +355,9 @@ footer .menubar .active>.icon-users,footer .menubar .tab:active>.icon-users{
     line-height: 140%;
     margin-bottom: 6px;
     padding: 0 4px;
+}
+.article-title{
+    padding: 0 6px;
 }
 
 /*互动模块*/
