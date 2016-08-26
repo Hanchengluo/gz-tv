@@ -340,6 +340,7 @@ footer .menubar .active,footer .menubar .tab:active{
 .article-title{
     color: #87002a;
     font-weight: 600;
+    padding: 0 6px;
 }
 
 /*互动模块*/
