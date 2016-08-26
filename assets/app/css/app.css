@@ -296,6 +296,9 @@ footer .menubar .active>.icon-users,footer .menubar .tab:active>.icon-users{
     margin-bottom: 6px;
     padding: 0 4px;
 }
+.article-title{
+    padding: 0 6px;
+}
 
 /*互动模块*/
 .menu-box{
