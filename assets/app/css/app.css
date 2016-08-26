@@ -383,6 +383,9 @@ header .titlebar .icon-menupoint{
     margin-bottom: 6px;
     padding: 0 4px;
 }
+.article-title{
+    padding: 0 6px;
+}
 
 /*互动模块*/
 .menu-box{
