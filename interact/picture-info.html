@@ -19,23 +19,30 @@
                         <h1 class="text-center"></h1>
                     </div>
                 </header>
-                <article id="main_article" data-role="article" class="active" style="bottom:46px;">
-                    <div class="picture-banner" style="background:url(../update/picture-info-banner.jpg);color:#fff;">
+                <article id="main_article" data-role="article" class="active">
+                    <div class="picture-banner" style="color:#000;">
                         <h3 class="title">CBA八进四比赛，中国男篮VS黑山男篮</h3>
                         <div class="clearfix" >
                             <span class="float-left" style="color:#db134d">正在直播</span>
                             <span class="float-right">3234123在线<i class="icon-chatdot"></i>2314</span>
                         </div>
+                        <div class="clearfix">
+                            <img src="../update/activity-live01.png" width="100%" alt="">
+                        </div>
                     </div>
                     <div class="picture-tab clearfix">
                         <ul>
-                            <li  href="picture-info.html" data-toggle="html"><i class="jiao"></i>直播现场</li>
+                            <li  href="picture-info.html" class="active" data-toggle="html">直播现场</li>
                             <li  href="picture-comment.html" data-toggle="html">聊天室</li>
                         </ul>
                     </div>
                     <div class="picture-info-box margin8">
+                        <div class="ic-time">
+                            <img src="../assets/app/img/list/icon-time.png" alt="">
+                        </div>
                         <div class="picture-list">
                             <div class="title clearfix">
+                                <span class="point"></span>
                                 <h3 class="float-left">主播-小菜菜</h3>
                                 <span class="float-right">2分钟</span>
                             </div>
@@ -45,6 +52,7 @@
                         </div>
                         <div class="picture-list">
                             <div class="title clearfix">
+                                <span class="point"></span>
                                 <h3 class="float-left">主播-小菜菜</h3>
                                 <span class="float-right">5分钟</span>
                             </div>
@@ -54,6 +62,7 @@
                         </div>
                         <div class="picture-list">
                             <div class="title clearfix">
+                                <span class="point"></span>
                                 <h3 class="float-left">主播-小菜菜</h3>
                                 <span class="float-right">14分钟</span>
                             </div>
@@ -90,5 +99,19 @@
         <script src="../assets/agile/js/agile.js"></script>
         <!-- app -->
         <script src="../assets/app/js/app.seedsui.js"></script>
+        <script>
+        (function(){
+            $('#btn_confirm').on(A.options.clickEvent, function(){
+                A.confirm('提示','这是一个Confirm！',
+                    function(){
+                        A.showToast('你选择了“确定”');
+                    },
+                    function(){
+                        A.alarmToast('你选择了“取消”');
+                    });
+                return false;
+            });
+        })();
+        </script>
     </body>
 </html>
