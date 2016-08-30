@@ -78,6 +78,9 @@ header .titlebar a,header .titlebar h1{
 .searchbar .btn-search{
 }
 
+.slideTab{
+    margin-right: 30px;
+}
 .slideTab .class{
     position: relative;
     height: 34px;
@@ -89,7 +92,19 @@ header .titlebar a,header .titlebar h1{
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
 }
-.slideTab li{
+.slideTab .Roll{
+    position: relative;
+    white-space: nowrap;
+    width: 105%;
+    padding-right: 2em;
+    height: 7em;
+    overflow: scroll;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+.slideTab a{
     position: relative;
     display: inline-block;
     height: 33px;
@@ -97,7 +112,7 @@ header .titlebar a,header .titlebar h1{
     padding: 0 0.8em;
     border-bottom: 1px solid #ddd;
 }
-.slideTab>.curr{
+.slideTab a.curr{
     border-bottom: 2px solid #7b1fa1;
     color: #7b1fa1;
 }
