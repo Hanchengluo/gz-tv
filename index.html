@@ -13,8 +13,8 @@
             <section id="slider_section" data-role="section" class="active">
                 <header>
                  	<div id="tabbarOuter" data-scroll="horizontal">
-                        <div class="scroller" style="width:500px;">
-                            <ul class="slidebar" style="padding-right:30px;">
+                        <div class="scroller scrollera" style="width:2046px;overflow:hidden;">
+                            <ul class="slidebar" style="padding-right:30px;margin: auto 0;">
                                 <li class="tab active" data-role="tab" href="index.html" data-toggle="html">
                                     <label class="tab-label">社会</label>
                                 </li>
@@ -213,6 +213,14 @@
         <script src="assets/third/jquery/jquery-2.1.3.min.js"></script>
         <script src="assets/third/jquery/jquery.mobile.custom.min.js"></script>
         <script src="assets/third/iscroll/iscroll-probe.js"></script>
+        <script type="text/javascript">
+                var LiAllWidth = 0;
+                $('.scrollera').children().each(function(i, ul){ 
+                    LiAllWidth += parseInt($(ul).css("width").replace("px", ""));
+                });
+                $('.scrollera').css('width',LiAllWidth + 30);
+        </script>
+
         <!---  agile -->
         <script type="text/javascript" src="assets/agile/js/agile.js"></script>
         <!-- app -->
