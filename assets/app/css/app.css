@@ -2,6 +2,15 @@
 .rectbar .tab, .slidebar .tab, .tabbar .tab{
     background:#fff;
 }
+.slidebar{
+    height: 42px;
+    width: auto;
+}
+.slidebar .tab{
+    display: inherit;
+    float: left;
+    padding: 0 18px;
+}
 .rectbar, .slidebar, .tabbar{
     color: #727272;
 }
